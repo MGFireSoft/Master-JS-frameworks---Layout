@@ -256,6 +256,7 @@ body {
   background: rgb(0, 0, 0);
 }
 
+
 .mid-form {
   width: 50%;
   margin: 0px auto;
@@ -273,6 +274,7 @@ body {
 input[type="text"],
 textarea {
   width: 100%;
+  min-height: 30px;
   height: 30px;
   border: 1px solid rgb(150, 150, 150);
   margin-bottom: 10px;
@@ -292,6 +294,7 @@ textarea {
   max-width: 100%;
   min-height: 150px;
   max-height: 300px;
+  transition: 0ms;
 }
 
 .radiobutton {
