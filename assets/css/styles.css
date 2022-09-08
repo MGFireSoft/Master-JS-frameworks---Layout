@@ -157,9 +157,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90d2ee', endColorstr='#9ad7ef', GradientType=1 );
 }
 
-
-
-
 #slider h1 {
   margin-top: 0.2;
   padding: 0px;
@@ -215,7 +212,7 @@ body {
 }
 
 .sidebar-item {
-  background: #f7f7f7;
+  background: #ededed;
   padding: 20px;
   margin-top: 30px;
 }
@@ -225,7 +222,7 @@ body {
   text-transform: uppercase;
   font-size: 17px;
   margin: 0px;
-  border-bottom: 3px solid rgb(124, 124, 124);
+  border-bottom: 3px solid rgb(171, 171, 171);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -312,6 +309,7 @@ textarea {
   color: #444;
 }
 
+/* los P siempre tienen margen, los saco con esto */
 #footer p {
   margin: 0px;
   padding: 0px;
@@ -358,7 +356,11 @@ textarea {
   display: block;
   color: #444;
   text-decoration: none;
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+.article-item a:hover{
+  text-decoration: underline;
 }
 
 .subheader {
@@ -378,6 +380,12 @@ textarea {
 .article-item .image-wrap img {
   width: 100%;
   height: auto;
+}
+
+.article-item .subheader {
+  margin-top: 15px;
+margin-bottom: 0px;
+border: none;
 }
 
 /* responsive */
