@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Frameworks master Layout</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="center">
+            <!-- LOGO -->
+            <div id="logo">
+                <img src="assets/images/rb.png" class="app-logo" alt="logo" />
+                <span id="brand"> <strong>Rapi</strong>Clean </span>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="formulario.html">Form</a></li>
+                    <li><a href="#">Page1</a></li>
+                    <li><a href="#">Page2</a></li>
+                </ul>
+            </nav>
+            <!-- clear floated -->
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+    <div class="center">
+        <section id="content">
+
+            <h1 class="subheader">Formulario</h1>
+
+
+
+            <form class="mid-form" action="">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Apellidos</label>
+                    <input type="text" name="apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio"></textarea>
+                </div>
+                <div class="form-group radiobutton">
+                    <input type="radio" name="genero" value="hombre" /> Hombre
+                    <input type="radio" name="genero" value="mujer" /> Mujer
+                    <input type="radio" name="genero" value="otro" /> Otro
+                </div>
+
+                <div class="clearfix"></div>
+                <input type="submit" name="Enviar" class="btn btn-succes">
+
+
+
+
+            </form>
+
+
+
+
+        </section>
+
+        <aside id="sidebar">
+            <div id="nav-productos" class="sidebar-item">
+                <h3>You can do this</h3>
+                <a href="#" class="btn btn-succes">Create Article</a>
+            </div>
+
+            <div id="search" class="sidebar-item">
+                <h3>Search</h3>
+                <p>Find your item</p>
+                <form action="">
+                    <input id="search" type="text" name="search" />
+                    <input type="submit" name="submit" value="buscar" class="btn" />
+                </form>
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="center">
+            <p>&copy; MGD.Soft</p>
+        </div>
+    </footer>
+</body>
+
+</html>
