@@ -20,7 +20,8 @@ body {
 
 .center {
   width: 75%;
-  margin: 0px auto; /* lo centra automatico*/
+  margin: 0px auto;
+  /* lo centra automatico*/
 }
 
 /* limpiar flotados para que lo de abajo no se meta */
@@ -47,9 +48,11 @@ body {
   0% {
     transform: rotate(-30deg);
   }
+
   50% {
     transform: rotate(30deg);
   }
+
   100% {
     transform: rotate(-30deg);
   }
@@ -95,7 +98,7 @@ body {
 }
 
 #slider {
-  margin-top: 0.2px;
+  margin-top: 0px;
   width: 100%;
   height: 350px;
   /*line-height: 32px;*/
@@ -104,61 +107,49 @@ body {
 
   /* css gradient */
   background: #61dafb;
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(144, 210, 238, 1) 0%,
-    rgba(144, 210, 238, 1) 31%,
-    rgba(7, 188, 242, 1) 84%,
-    rgba(154, 215, 239, 1) 100%
-  );
-  background: -webkit-gradient(
-    radial,
-    center center,
-    0px,
-    center center,
-    100%,
-    color-stop(0%, rgba(144, 210, 238, 1)),
-    color-stop(31%, rgba(144, 210, 238, 1)),
-    color-stop(84%, rgba(7, 188, 242, 1)),
-    color-stop(100%, rgba(154, 215, 239, 1))
-  );
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(144, 210, 238, 1) 0%,
-    rgba(144, 210, 238, 1) 31%,
-    rgba(7, 188, 242, 1) 84%,
-    rgba(154, 215, 239, 1) 100%
-  );
-  background: -o-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(144, 210, 238, 1) 0%,
-    rgba(144, 210, 238, 1) 31%,
-    rgba(7, 188, 242, 1) 84%,
-    rgba(154, 215, 239, 1) 100%
-  );
-  background: -ms-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(144, 210, 238, 1) 0%,
-    rgba(144, 210, 238, 1) 31%,
-    rgba(7, 188, 242, 1) 84%,
-    rgba(154, 215, 239, 1) 100%
-  );
-  background: radial-gradient(
-    ellipse at center,
-    rgba(144, 210, 238, 1) 0%,
-    rgba(144, 210, 238, 1) 31%,
-    rgba(7, 188, 242, 1) 84%,
-    rgba(154, 215, 239, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#90d2ee', endColorstr='#9ad7ef', GradientType=1 );
+  background: -moz-radial-gradient(center,
+      ellipse cover,
+      rgba(144, 210, 238, 1) 0%,
+      rgba(144, 210, 238, 1) 31%,
+      rgba(7, 188, 242, 1) 84%,
+      rgba(154, 215, 239, 1) 100%);
+  background: -webkit-gradient(radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, rgba(144, 210, 238, 1)),
+      color-stop(31%, rgba(144, 210, 238, 1)),
+      color-stop(84%, rgba(7, 188, 242, 1)),
+      color-stop(100%, rgba(154, 215, 239, 1)));
+  background: -webkit-radial-gradient(center,
+      ellipse cover,
+      rgba(144, 210, 238, 1) 0%,
+      rgba(144, 210, 238, 1) 31%,
+      rgba(7, 188, 242, 1) 84%,
+      rgba(154, 215, 239, 1) 100%);
+  background: -o-radial-gradient(center,
+      ellipse cover,
+      rgba(144, 210, 238, 1) 0%,
+      rgba(144, 210, 238, 1) 31%,
+      rgba(7, 188, 242, 1) 84%,
+      rgba(154, 215, 239, 1) 100%);
+  background: -ms-radial-gradient(center,
+      ellipse cover,
+      rgba(144, 210, 238, 1) 0%,
+      rgba(144, 210, 238, 1) 31%,
+      rgba(7, 188, 242, 1) 84%,
+      rgba(154, 215, 239, 1) 100%);
+  background: radial-gradient(ellipse at center,
+      rgba(144, 210, 238, 1) 0%,
+      rgba(144, 210, 238, 1) 31%,
+      rgba(7, 188, 242, 1) 84%,
+      rgba(154, 215, 239, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#90d2ee', endColorstr='#9ad7ef', GradientType=1);
 }
 
 #slider h1 {
-  margin-top: 0.2;
+  margin-top: 0.2px;
   padding: 0px;
   padding-top: 120px;
   text-align: center;
@@ -362,7 +353,7 @@ textarea {
   margin-top: 30px;
 }
 
-.article-item a:hover{
+.article-item a:hover {
   text-decoration: underline;
 }
 
@@ -387,27 +378,63 @@ textarea {
 
 .article-item .subheader {
   margin-top: 15px;
-margin-bottom: 0px;
-border: none;
+  margin-bottom: 0px;
+  border: none;
 }
 
 /* responsive */
-@media (max-width: 1200px) {
-  body {
-    background-color: rgb(255, 37, 37);
+
+@media (max-width: 1440px) {
+  .center {
+    width: 85%;
+  }
+
+  #menu ul {
+    width: auto;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 963px) {
   body {
     background-color: rgb(46, 42, 165);
   }
+
+  .center {
+    width: 95%;
+  }
+
+  #logo {
+    width: auto;
+  }
+
+  #logo img {
+    width: auto;
+  }
+
+  #menu {
+    width: auto;
+    width: auto;
+    font-size: 2.8vw;
+    margin-top: 1vw;
+  }
+
+  #menu ul {
+    padding-inline-start: 10px;
+  }
+
+  #menu ul li {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+
 }
 
 @media (max-width: 480px) {
   body {
     background-color: white;
   }
+
   .center {
     width: 100%;
   }
@@ -480,6 +507,7 @@ border: none;
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
+
   #content {
     width: 100%;
     float: left;
