@@ -18,10 +18,11 @@ body {
   border-top: 3px solid #61DBFB;
 }
 
+  /* lo centra automatico*/
 .center {
   width: 75%;
   margin: 0px auto;
-  /* lo centra automatico*/
+
 }
 
 /* limpiar flotados para que lo de abajo no se meta */
@@ -61,7 +62,6 @@ body {
   float: left;
   margin-top: 9px;
   margin-left: 8px;
-  /* margin-left: 15px; */
 }
 
 #menu {
@@ -98,7 +98,6 @@ body {
   margin-top: 0px;
   width: 100%;
   height: 350px;
-  /*line-height: 32px;*/
   color: white;
   text-shadow: rgb(40, 40, 40);
 
@@ -292,7 +291,6 @@ textarea {
 }
 
 .article-item .image-wrap img {
-  /* width: 100%; */
   height: 100%;
   text-align: center;
 }
