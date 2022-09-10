@@ -15,7 +15,7 @@ body {
   width: 100%;
   background: white;
   border-bottom: 1px solid #ccc;
-  border-top: 3px solid #61dafb;
+  border-top: 3px solid #61DBFB;
 }
 
 .center {
@@ -41,21 +41,18 @@ body {
   display: block;
   float: left;
   height: 60px;
-  animation: diver infinite 2s;
+  animation: rotar infinite 8s linear;
 }
 
-@keyframes diver {
-  0% {
-    transform: rotate(-30deg);
+@keyframes rotar {
+ from {
+    transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(30deg);
+  to {
+    transform: rotate(360deg);
   }
 
-  100% {
-    transform: rotate(-30deg);
-  }
 }
 
 #brand {
@@ -94,7 +91,7 @@ body {
 }
 
 #menu a:hover {
-  color: rgb(77, 192, 234);
+  color: #61dbfb;
 }
 
 #slider {
@@ -106,46 +103,14 @@ body {
   text-shadow: rgb(40, 40, 40);
 
   /* css gradient */
-  background: #61dafb;
-  background: -moz-radial-gradient(center,
-      ellipse cover,
-      rgba(144, 210, 238, 1) 0%,
-      rgba(144, 210, 238, 1) 31%,
-      rgba(7, 188, 242, 1) 84%,
-      rgba(154, 215, 239, 1) 100%);
-  background: -webkit-gradient(radial,
-      center center,
-      0px,
-      center center,
-      100%,
-      color-stop(0%, rgba(144, 210, 238, 1)),
-      color-stop(31%, rgba(144, 210, 238, 1)),
-      color-stop(84%, rgba(7, 188, 242, 1)),
-      color-stop(100%, rgba(154, 215, 239, 1)));
-  background: -webkit-radial-gradient(center,
-      ellipse cover,
-      rgba(144, 210, 238, 1) 0%,
-      rgba(144, 210, 238, 1) 31%,
-      rgba(7, 188, 242, 1) 84%,
-      rgba(154, 215, 239, 1) 100%);
-  background: -o-radial-gradient(center,
-      ellipse cover,
-      rgba(144, 210, 238, 1) 0%,
-      rgba(144, 210, 238, 1) 31%,
-      rgba(7, 188, 242, 1) 84%,
-      rgba(154, 215, 239, 1) 100%);
-  background: -ms-radial-gradient(center,
-      ellipse cover,
-      rgba(144, 210, 238, 1) 0%,
-      rgba(144, 210, 238, 1) 31%,
-      rgba(7, 188, 242, 1) 84%,
-      rgba(154, 215, 239, 1) 100%);
-  background: radial-gradient(ellipse at center,
-      rgba(144, 210, 238, 1) 0%,
-      rgba(144, 210, 238, 1) 31%,
-      rgba(7, 188, 242, 1) 84%,
-      rgba(154, 215, 239, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#90d2ee', endColorstr='#9ad7ef', GradientType=1);
+  background: rgba(189,242,255,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(189,242,255,1) 0%, rgba(60,204,240,1) 52%, rgba(60,204,240,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(189,242,255,1)), color-stop(52%, rgba(60,204,240,1)), color-stop(100%, rgba(60,204,240,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(189,242,255,1) 0%, rgba(60,204,240,1) 52%, rgba(60,204,240,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(189,242,255,1) 0%, rgba(60,204,240,1) 52%, rgba(60,204,240,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(189,242,255,1) 0%, rgba(60,204,240,1) 52%, rgba(60,204,240,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(189,242,255,1) 0%, rgba(60,204,240,1) 52%, rgba(60,204,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdf2ff', endColorstr='#3cccf0', GradientType=1 );
 }
 
 #slider h1 {
@@ -391,6 +356,11 @@ textarea {
     width: 85%;
   }
 
+  #logo {
+    width: auto;
+    font-size: 28px;
+  }
+
   #menu ul {
     width: auto;
   }
@@ -405,9 +375,7 @@ textarea {
     width: 95%;
   }
 
-  #logo {
-    width: auto;
-  }
+
 
   #logo img {
     width: auto;
@@ -439,7 +407,7 @@ textarea {
   #logo {
 
     float: none;
-    width: 240px;
+    width: 264px;
     margin: 0px auto;
     margin-top: 20px;
 
