@@ -41,21 +41,18 @@ body {
   display: block;
   float: left;
   height: 60px;
-  animation: diver infinite 2s;
+  animation: rotar infinite 10s linear;
 }
 
-@keyframes diver {
-  0% {
-    transform: rotate(-30deg);
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(30deg);
+  to {
+    transform: rotate(360deg);
   }
 
-  100% {
-    transform: rotate(-30deg);
-  }
 }
 
 #brand {
